@@ -25,7 +25,7 @@ $(function(){
 
 var articles =[
       {
-      title: 'loveNature',
+      title: '<h1>LoveNature</h1>',
       },
       {
       title: 'Хочу учить фронтенд, потому что:',
