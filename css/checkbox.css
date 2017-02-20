@@ -1,0 +1,38 @@
+.checkbox-cont {
+	position: absolute;
+	top: 560px;
+  left: 80px;
+
+}
+
+.checkbox-css {
+	margin: 20px 50px;
+}
+.checkbox-css input[type=checkbox] {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+.checkbox-css label {
+	cursor: pointer;
+	font-family: Arial;
+	color: #fff;
+}
+.checkbox-css label:after {
+	content: " ";
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url("../img/checkbox-2.png");
+	position: relative;
+	top: 3px;
+	margin-left: 15px;
+}
+.checkbox-css input[type=checkbox]:checked + label:after {
+background-position: 0 -17px;
+}
+.checkbox-css label:hover:after {
+background-position: 0 -34px;
+}
+.checkbox-css input[type=checkbox]:checked + label:hover:after {
+background-position: 0 -51px;
+}

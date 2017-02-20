@@ -1,0 +1,56 @@
+*{
+  margin: 0;
+  padding: 0
+}
+.wrapper {
+  padding: 50px 0 0 300px;
+
+}
+
+.carousel-list {
+    list-style: none;
+    width: 10000px;
+    padding: 0px;
+    position: relative;
+}
+
+.carousel-hider {
+    width: 600px;
+    overflow: hidden;
+    float: left;
+}
+
+.carousel-element {
+    display: block;
+    margin-right: 25px;
+    float: left;
+}
+
+.carousel-element img {
+    max-width: 100px;
+    border-radius: 3px;
+}
+.carousel-element p {
+  text-align: center;
+}
+
+
+.carousel-arrow-left, .carousel-arrow-right {
+    float: left;
+    display: block;
+    margin-top: 35px;
+}
+
+
+.carousel-arrow-left {
+    margin-right: 25px;
+}
+
+.carousel-arrow-right {
+    margin-left: 25px;
+}
+
+.article {
+  clear: both;
+  margin: 20px;
+}
