@@ -1,8 +1,30 @@
+$(document).ready(function() {
+
 
 
 (function($){
-	jQuery.fn.myPlugin = function(){
+
+
+
+	jQuery.fn.myPlugin = function(options){
+		options = $.extend({
+			// defColor:"green", //цвет элемента над которым нет курсора
+			// hoverColor:"red", //цвет элемента на который наведен курсор
+			borderColor:"1px solid red",
+			whiteColor:"1px solid #fff"
+		}, options);
 		var make = function(){
+
+			$(this).css("background-color",options.defColor)
+				.mouseenter( function(){
+					//$(this).css("background-color",options.hoverColor);
+					$(this).css("border",options.borderColor);
+				})
+				.mouseleave( function(){
+					//$(this).css("background-color",options.defColor);
+					$(this).css("border",options.whiteColor);
+
+				});
 			// реализация работы метода с отдельным элементом страницы
 			$(".carousel-arrow-right").click(function () { // при клике на правую кнопку запускаем следующую функцию:
 				$(".carousel-list").animate({left: "-125px"}, 200); // производим анимацию: блок с набором картинок уедет влево на 222 пикселя (это ширина одного прокручиваемого элемента) за 200 милисекунд.
@@ -24,6 +46,9 @@
 		return this.each(make);
 		// в итоге, метод myPlugin вернет текущий объект jQuery обратно
 	};
+
 })(jQuery);
 
-$('body').myPlugin();
+$('#foo1, #foo2').myPlugin();
+
+});
