@@ -36,6 +36,7 @@
 
 
 .carousel-arrow-left, .carousel-arrow-right {
+
     float: left;
     display: block;
     margin-top: 35px;
@@ -43,11 +44,15 @@
 
 
 .carousel-arrow-left {
+
     margin-right: 25px;
+    border: 1px solid #fff;
 }
 
 .carousel-arrow-right {
+
     margin-left: 25px;
+    border: 1px solid #fff;
 }
 
 .article {
